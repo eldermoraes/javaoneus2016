@@ -1,0 +1,3 @@
+rootProject.name = 'javaonedb'
+include ':javaonedb-jpa'
+project(':javaonedb-jpa').projectDir = new File(settingsDir, '../javaonedb-jpa')
