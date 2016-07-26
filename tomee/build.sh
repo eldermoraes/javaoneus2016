@@ -1,0 +1,1 @@
+docker build -t tomee-db --build-arg WAR_FILE=javaonedb.war .

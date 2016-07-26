@@ -1,0 +1,1 @@
+docker run --name postgresdb -p 5432:5432 postgres-javaone

@@ -1,1 +1,0 @@
-docker run --name postgresdb --env-file ./env.list postgres-javaone
