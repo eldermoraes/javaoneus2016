@@ -42,4 +42,7 @@ public class Data implements Serializable {
 		this.nameData = nameData;
 	}
 
+	public String print() {
+		return codData + " - " + nameData;
+	}
 }
