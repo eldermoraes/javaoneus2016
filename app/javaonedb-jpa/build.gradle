@@ -11,6 +11,8 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'org.apache.openejb', name: 'arquillian-tomee-embedded', version: '1.7.4'
+    testCompile group: 'org.apache.openejb', name: 'tomee-embedded', version: '1.7.4'
     // https://mvnrepository.com/artifact/org.apache.openejb/javaee-api
     compile group: 'org.apache.openejb', name: 'javaee-api', version: '6.0-6'
 }
