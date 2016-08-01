@@ -1,5 +1,8 @@
 # JavaOne US 2016
 
+## Java EE, Posgres, Tomee and Docker Demo
+
+
 To build our Postgres image (based on [this](postgres/Dockerfile) Dockerfile)
 
 ```
@@ -42,3 +45,11 @@ docker start loadbalancerdb
 ```
 
 Then an application called "javaonedb" will be available to be accessed thru your browser (check "docker-machine ip" command to see the IP that Docker is using).
+
+## Java EE, Posgres, Tomee, Gradle and Docker Demo
+
+Go to the [javaonedb](app/javaonedb) folder and execute the command:
+
+```
+gradle clean build war
+```
