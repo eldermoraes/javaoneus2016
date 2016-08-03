@@ -2,7 +2,7 @@
 .idea
 .classpath
 .project
-.settings
+.settings/
 .gradle/
 build/
 classes/
