@@ -1,4 +1,4 @@
-# jenkins-with-docker
+# jenkins
 Docker image of Jenkins with docker-jenkins plugin to be installed in the container start.
 
 ## How to build
