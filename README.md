@@ -15,7 +15,7 @@ To create and run a new container based on the image created:
 docker run --name postgresdb -p 5432:5432 postgres-javaone
 ```
 
-To build our Postgres image (based on [this](tomee-db/Dockerfile) Dockerfile)
+To build our TomEE image (based on [this](tomee-db/Dockerfile) Dockerfile)
 
 ```
 docker build -t tomee-db --build-arg WAR_FILE=javaonedb.war .
