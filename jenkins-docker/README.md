@@ -9,7 +9,20 @@ docker build -t <Your Docker Hub ID>/jenkins-docker .
 ```
 
 ## How to use
-To run this image, just enter the following command in your terminal:
+To run this image, firstly you have to set the DOCKER_OPTS variable to be able to
+use the Docker inside the Jenkins container.
+
+```{bash}
+export DOCKER_OPTS="-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock"
+```
+
+After that, you must restart docker service. In Linux, this can be done as follows:
+
+```{bash}
+sudo service docker restart
+```
+
+And then, enter the following command in your terminal:
 
 ```bash
 docker run -d --name jenkins -p 8080:8080 -p 50000:50000 <Your Docker Hub ID>/jenkins-docker
