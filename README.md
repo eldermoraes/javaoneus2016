@@ -12,19 +12,19 @@ docker build -t postgres-javaone .
 To create and run a new container based on the image created:
 
 ```
-docker run --name postgresdb -p 5432:5432 postgres-javaone
+docker run -d --name postgresdb -p 5432:5432 postgres-javaone
 ```
 
 To create and run a new container based on an ActiveMQ image:
 
 ```
-docker run --name activemq webcenter/activemq:5.13.2
+docker run -d --name activemq webcenter/activemq:5.13.2
 ```
 
 To create and run a new container based on an Apache Cassandra image:
 
 ```
-docker run --name cassandradb cassandra:3.7
+docker run -d --name cassandradb cassandra:3.7
 ```
 
 To build our Apache TomEE image (based on [this](tomee-db/Dockerfile) Dockerfile)
